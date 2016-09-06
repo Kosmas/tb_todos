@@ -3,7 +3,7 @@ defmodule Todos.TodoControllerTest do
 
   test "#index renders a list of todos" do
     conn = build_conn()
-    tood = insert(:todo)
+    todo = insert(:todo)
 
     conn = get conn, todo_path(conn, :index)
 
